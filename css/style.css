@@ -1,0 +1,311 @@
+
+:root{
+    --background: #1A1C1D;
+    --background-card: #rgba(53, 43, 43, 1);
+    --input-background: #000;
+
+}
+/* resetar */
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* body */
+
+body{
+    background: #0CF574;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    max-width: 1300px;
+    margin: 0px auto;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(18.5px);
+border-radius: 4px;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background:rgba(53, 43, 43, 1);
+    width: 50vw;
+    padding: 40px;
+}
+form h1,i{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+input{
+    padding-left: 10px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid #1E8E36;
+    padding-left: 10px;
+}
+input:focus i {
+    color: #1E8E36;
+}
+input:focus::-webkit-input-placeholder 
+{
+    color: transparent;
+}
+.hedaerCardResgiter {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+}
+.inputField {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   
+
+}
+.inputField label{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.inputField i{
+    position: absolute;
+    top: 75px;
+    left: 400px;
+    font-size: 1.5rem;
+}
+ input{
+    width: 440px;
+    height: 50px;
+    background: #000;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+}
+input::placeholder{
+    color: #fff;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+#btnSubmit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 356px;
+height: 61px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #1E8E36;
+color: #FFF;
+font-family: Open Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin: 80px auto;
+text-align: center;
+border-radius: 4px;
+border: none;
+cursor: pointer;
+box-shadow: 0px 4px 4px 0px rgba(94, 207, 164, 0.25);
+backdrop-filter: blur(18.5px);
+}
+
+#btnSubmit:hover{
+    background: #000000a2;
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.164);
+    backdrop-filter: blur(18.5px);
+   
+}
+
+#reflectCreditCard{
+    width: 50vw;
+    background-color: rgba(53, 43, 43, 1);
+    background-size: cover;
+   
+    flex-direction: row;
+    padding: 50px;
+}
+#cardRegister{
+ display: flex;
+ width: 100%;
+}
+
+#hedaerCardResgiter{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+}
+#hedaerCardResgiter h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+#reflectCreditCard #headerCardReflect {
+    color: #FFF;
+font-family: Open Sans;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+} 
+
+#CardReflected{
+    display: flex;
+    flex-direction: column;
+
+    width: 506px;
+height: 320px;
+flex-shrink: 0;
+    width: 100%;
+    border-radius: 8px;
+background: rgba(88, 84, 84, 0.50);
+box-shadow: 0px 4px 4px 0px rgba(94, 207, 164, 0.25);
+backdrop-filter: blur(18.5px);
+padding: 20px 5px;
+}
+
+.reflectCardHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+div#numberCard {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.cardInfoReflected {
+    display: flex;
+    flex-direction: row; /* Mantén la dirección como fila para los elementos en .cardInfoReflected */
+    justify-content: flex-start;
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding: 0px 20px;
+    justify-content: space-between; 
+}
+
+.cardInfoReflected div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+#cvv{
+    margin-left: 28px;
+}
+div [title='inlineFlex'] {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+div [title='inlineFlex'] input {
+    width: 212px;
+    margin-right: 10px;
+
+}
+div [title='inlineFlex'] input:last-child {
+    margin-right: 0px;
+}
+div [title='inlineFlex'] i {
+    position: absolute;
+    z-index: 3;
+    top: 15px;
+    font-size: 1.5rem;
+}
+.inlineTittle{
+    display: flex;
+    flex-direction: row;
+    gap: 74px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+.inlineTittle i{
+    position: absolute;
+    top: 55px;
+    left: 175px;
+
+    font-size: 1.5rem;
+    z-index: 3;
+}
+
+.c-loader {
+    
+    display: block !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 50px;
+    width: 50px;
+    z-index: 333;
+  }
+
+  
+  @keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
